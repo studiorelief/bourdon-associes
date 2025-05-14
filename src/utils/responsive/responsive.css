@@ -1,0 +1,10 @@
+/* Responsive styles for home hero section */
+@media screen and (max-width: 1199px) {
+  .home_hero_content {
+    display: flex;
+    flex-direction: column;
+  }
+  .home_hero_left {
+    gap: var(--_responsive---margin--padding--spacer--gap--huge);
+  }
+}

@@ -1,0 +1,7 @@
+.fs_cc-accordion_arrow-line-v {
+  transition: opacity 0.15s ease-in-out;
+}
+
+.fs_cc-accordion_header.is-active-accordion .fs_cc-accordion_arrow-line-v {
+  opacity: 0;
+}

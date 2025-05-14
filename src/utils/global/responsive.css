@@ -1,0 +1,5 @@
+@media screen and (max-width: 1350px) {
+  .home_presentation_grid {
+    min-width: calc(100% / 3);
+  }
+}

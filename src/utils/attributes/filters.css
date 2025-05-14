@@ -1,0 +1,29 @@
+.equipe_filters_radio_round-active {
+  transition: opacity 0.6s ease-in-out;
+}
+
+.equipe_filters_radio_field.is-active-inputactive .equipe_filters_radio_round-active {
+  opacity: 1;
+}
+
+.equipe_filters_button-all.is-active .equipe_filters_radio_round-active {
+  opacity: 1;
+}
+
+/* hide title if filter active */
+
+.equipe_filters_radio_field:has(.is-active-inputactive) ~ .equipe_heading {
+  display: none;
+}
+
+/* actualites filters */
+
+.actualites_filters_radio_field.is-active-inputactive .actualites_filters_slash,
+.actualites_filters_button-all.is-active .actualites_filters_slash {
+  display: flex;
+}
+
+.actualites_filters_radio_field,
+.actualites_filters_button-all {
+  transition: margin 0.3s ease-in-out;
+}

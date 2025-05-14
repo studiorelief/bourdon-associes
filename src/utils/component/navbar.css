@@ -1,0 +1,38 @@
+/* .navbar_link-divider {
+  transform: width 0.3s ease-in-out;
+} */
+
+.navbar_component {
+  transition: transform 0.4s ease-in-out;
+}
+
+.navbar_link-divider {
+  transition: width 0.4s ease-in-out;
+}
+
+.navbar_link:hover .navbar_link-divider {
+  width: 100%;
+}
+
+.navbar_link.w--current .navbar_link-divider {
+  width: 100%;
+}
+
+/* button navbar */
+
+.button-text-nav-hover,
+.button-text-nav {
+  transition:
+    opacity 0.3s ease-out,
+    transform 0.3s ease-out;
+}
+
+.button.is-navbar:hover .button-text-nav-hover {
+  opacity: 1;
+  transform: translate(0%, 0px);
+}
+
+.button.is-navbar:hover .button-text-nav {
+  opacity: 0;
+  transform: translate(100%, 0px);
+}

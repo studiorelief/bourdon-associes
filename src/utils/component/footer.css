@@ -1,0 +1,16 @@
+.footer_text-hover,
+.footer_text {
+  transition:
+    opacity 0.3s ease-in-out,
+    transform 0.3s ease-in-out;
+}
+
+.footer_link:hover .footer_text-hover {
+  opacity: 1;
+  transform: translate(0%, 0px);
+}
+
+.footer_link:hover .footer_text {
+  opacity: 0;
+  transform: translate(100%, 0px);
+}
