@@ -1,0 +1,57 @@
+/* Navbar sticks right below the sticky banner */
+
+.banner_component ~ .navbar_component {
+  top: var(--banner-height, 0px);
+}
+
+/* Loop mobile - duplicated content is only shown on mobile */
+
+.banner_content[aria-hidden='true'] {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .banner_content[aria-hidden='true'] {
+    display: flex;
+  }
+
+  .banner_track {
+    animation: banner-loop var(--banner-loop-duration, 15s) linear infinite;
+  }
+}
+
+@media screen and (max-width: 767px) and (prefers-reduced-motion: reduce) {
+  .banner_component {
+    justify-content: center;
+    padding-left: var(--_responsive---padding-section--padding-global);
+    padding-right: var(--_responsive---padding-section--padding-global);
+  }
+
+  .banner_track {
+    width: 100%;
+    animation: none;
+  }
+
+  .banner_content {
+    flex-wrap: wrap;
+    flex-shrink: 1;
+    padding-right: 0;
+  }
+
+  .banner_text {
+    white-space: normal;
+  }
+
+  .banner_content[aria-hidden='true'] {
+    display: none;
+  }
+}
+
+@keyframes banner-loop {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-1 * var(--banner-loop-distance, 50%)));
+  }
+}

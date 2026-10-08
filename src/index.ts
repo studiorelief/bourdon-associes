@@ -7,6 +7,7 @@ import {
   parallaxHomeHero,
 } from '$utils/animations/parallax';
 import { teamFilters } from '$utils/attributes/filters';
+import { banner } from '$utils/component/banner';
 import { navbarScroll } from '$utils/component/navbar';
 import { headingSlide } from '$utils/global/headingSlide';
 import loadScript from '$utils/global/loadScript';
@@ -32,6 +33,7 @@ window.Webflow.push(() => {
   initMarker();
 
   // global & components
+  banner();
   navbarScroll();
   svgComponent();
   filterScrollTop();

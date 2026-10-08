@@ -1,5 +1,6 @@
 @import './utils/component/button.css';
 @import './utils/component/navbar.css';
+@import './utils/component/banner.css';
 @import './utils/global/responsive.css';
 @import './utils/component/accordion.css';
 @import './utils/global/tricks.css';
